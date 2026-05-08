@@ -406,9 +406,3 @@ Add screenshots of:
 - Agentforce 360 Platform Development Basic
 
 --------------------------------------------------
-Using:
-- Apex
-- APIs
-- Lightning Components
-- Triggers
-- Integrations
