@@ -82,6 +82,7 @@ A company discussing a software purchase with Salesforce.
 ---
 
 Core Task 1: Business Flow
+
 Lead → Contact → Opportunity → Customer
 
 The business process in Salesforce usually starts with a Lead.
