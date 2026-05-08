@@ -346,19 +346,7 @@ Admin Can:
 
 --------------------------------------------------
 
-# GitHub Submission
-
-Create Folder:
-
-/day2-platform-basics/
-
-Inside the folder create:
-
-README.md
-
---------------------------------------------------
-
-# README.md Must Include
+#  Must Include
 
 1. What is Salesforce Platform?
 
@@ -414,41 +402,10 @@ Students, faculty, and admins interact with records using tabs and apps.
 5. Screenshots from Trailhead
 
 Add screenshots of:
-- Completed modules
-- Badges
-- Salesforce dashboard
-- Apps and objects
+-  Agentforce 360 Platform Basics
+- Agentforce 360 Platform Development Basic
 
 --------------------------------------------------
-
-# Evaluation Questions
-
-1. What is an App in Salesforce?
-An App is a collection of related tools, tabs, and objects used for a business purpose.
-
---------------------------------------------------
-
-2. What is an Object?
-An Object is a database table used to store records and data.
-
---------------------------------------------------
-
-3. Difference Between App and Object
-An App organizes functionality, while an Object stores data.
-
---------------------------------------------------
-
-4. What is Multi-Tenant Architecture?
-It is an architecture where multiple companies share the same infrastructure securely.
-
---------------------------------------------------
-
-5. When Should We Use Configuration Instead of Code?
-Use configuration when requirements are simple and can be handled using built-in Salesforce tools.
-
---------------------------------------------------
-
-6. How Does Salesforce Allow Developers to Extend Functionality?
 Using:
 - Apex
 - APIs
