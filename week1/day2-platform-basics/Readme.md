@@ -1,203 +1,457 @@
-Day 2  – Salesforce Platform Basics
+# Day 2 – Salesforce Platform Basics
 
-1. Salesforce Platform Basics
+## What is Salesforce Platform?
 
-You learn:
+Salesforce Platform is a cloud-based platform used to build CRM applications, manage customer data, automate workflows, and improve business processes.
 
-Platform overview
-Navigation inside Salesforce
-Apps and Objects
-Platform structure
-Important Concepts
-Salesforce is cloud-based
-Data is organized using Objects
-Apps combine related features together
-Tabs help users navigate
-2. Salesforce Development Basics
+It helps companies:
 
-You learn:
+- Store and manage customer data
+- Build custom applications
+- Automate business operations
+- Improve communication between teams
+- Increase productivity
+- Provide better customer support
 
-How development happens in Salesforce
-Difference between Admin work and Developer work
-Configuration vs Coding
-Introduction to:
-Apex
-APIs
-UI Customization
-3. Salesforce Architecture
+Salesforce is highly scalable and can be used by businesses of all sizes.
 
-You understand:
+--------------------------------------------------
 
-Multi-tenant architecture
-How Salesforce serves multiple companies securely
-Why Salesforce is scalable and efficient
-Multi-Tenant Example
+# Why Salesforce Platform is Important
 
-Like many families living in one apartment building:
+Companies use Salesforce Platform because it helps them:
 
-Same building
-Separate apartments
+- Manage all customer information in one place
+- Create business applications quickly
+- Automate repetitive tasks
+- Improve collaboration between departments
+- Access data from anywhere using the cloud
+- Customize applications based on business needs
 
-Similarly:
+Salesforce provides both:
+- Configuration tools (clicks)
+- Development tools (coding)
 
-Same Salesforce infrastructure
-Separate customer data
+--------------------------------------------------
 
-CORE TASKS
-Task 1 – Connect Day 1 + Day 2
+# Salesforce Platform Core Concepts
 
-Explain: 
-� How CRM concepts (Account, Contact, Opportunity) 
-fit into Salesforce Platform (Objects, Apps)
+# App
 
-Explanation
+An App in Salesforce is a collection of related tools, objects, tabs, and features used for a specific business purpose.
 
-CRM concepts like:
+It acts like a workspace where users can access all related functionality in one place.
 
-Account
-Contact
-Opportunity
-
-are implemented in Salesforce using Objects.
-
-CRM Concept	Salesforce Representation
-Account	Object
-Contact	Object
-Opportunity	Object
-
-These objects are grouped inside an App such as the Sales App.
-
-Example Flow
-Company information stored in Account
-Customer details stored in Contact
-Sales deals stored in Opportunity
-
-This structure helps businesses manage customer relationships efficiently.
-
-Task 2 – Platform Understanding
-1. What is an App in Salesforce?
-
-An App is a collection of related tools, objects, tabs, and features designed for a specific business process.
-
-Example
-
+Example:
 Hospital Management App may include:
+- Patients
+- Doctors
+- Appointments
+- Billing
 
-Patients
-Doctors
-Appointments
-Billing
-Purpose
-Organizes work
-Improves navigation
-Provides one workspace for users
+Apps help businesses:
+- Organize features properly
+- Improve navigation
+- Increase user productivity
 
-2. What is an Object?
+--------------------------------------------------
 
-An Object is like a database table used to store information.
+# Object
+
+An Object is like a database table used to store specific business information.
 
 Objects contain:
+- Records (rows)
+- Fields (columns)
 
-Records (rows)
-Fields (columns)
-Types of Objects
-Standard Objects
+Types of Objects:
 
-Built-in Salesforce objects:
+1. Standard Objects
+Objects already provided by Salesforce:
+- Account
+- Contact
+- Opportunity
+- Lead
 
-Account
-Contact
-Opportunity
-Custom Objects
+2. Custom Objects
+Objects created based on business requirements:
+- Student
+- Patient
+- Library Book
+- Attendance
 
-Created by users/developers:
+Example:
+A Student Object may store:
+- Student Name
+- Roll Number
+- Department
+- Email
 
-Student
-Patient
-Library Book
-Example
+Objects help businesses organize and manage data efficiently.
 
-Student Object may contain:
+--------------------------------------------------
 
-Student Name
-Roll Number
-Email
-3. What is a Tab?
+# Tab
 
-A Tab is used to access objects, apps, dashboards, or pages in Salesforce.
+A Tab is a navigation tool used to access Objects, Apps, Dashboards, and Pages in Salesforce.
 
-Example
+Tabs help users open and manage records easily.
 
-Contacts Tab opens:
+Example:
+Contacts Tab allows users to:
+- View contacts
+- Create new contacts
+- Edit contact details
 
-Contact records
-Create new contact option
-Edit contact option
-Purpose
-Easy navigation
-Quick access to data
+Tabs improve:
+- Navigation
+- Accessibility
+- User experience
 
-Task 3 – Configuration vs Coding
-Configuration (No Code)
+--------------------------------------------------
 
-Configuration means building features using clicks instead of programming.
+# Salesforce Architecture
 
-When to Use
+# Multi-Tenant Architecture
 
-Use configuration when requirements are simple.
+Salesforce follows a Multi-Tenant Architecture.
 
-Examples
-Validation Rules
-Workflow Automation
-Creating Fields
-Page Layout Changes
-Advantages
-Faster
-Easier maintenance
-No coding needed
-Coding (Apex)
+This means multiple companies use the same Salesforce infrastructure securely while keeping their data separate.
 
-Coding means writing custom logic using Apex or Lightning Components.
+Advantages:
+- Low maintenance cost
+- Automatic updates
+- High security
+- Better scalability
 
-When to Use
+Real-Life Example:
+Like many families living in one apartment building:
+- Same building
+- Separate apartments
 
-Use coding for complex business requirements.
+Similarly:
+- Same Salesforce servers
+- Separate company data
 
-Examples
-External system integration
-Complex approval processes
-Advanced calculations
-Custom business logic
-Advantages
-More flexibility
-Supports complex features
-Highly customizable
-Task 4 – Real System Thinking
-Example System: College Management System
-App Name
+--------------------------------------------------
 
+# Difference Between Configuration and Coding
+
+# Configuration (No Code)
+
+Configuration means creating features using clicks instead of programming.
+
+Salesforce provides tools that allow admins to customize applications without writing code.
+
+When to Use Configuration:
+- Requirements are simple
+- Built-in Salesforce features are enough
+- Fast implementation is needed
+
+Examples:
+- Validation Rules
+- Workflow Automation
+- Creating Fields
+- Page Layout Customization
+
+Advantages:
+- Faster development
+- Easy maintenance
+- No coding knowledge needed
+
+--------------------------------------------------
+
+# Coding (Apex)
+
+Coding means writing custom logic using Apex, Lightning Components, APIs, or Triggers.
+
+Developers use coding when business requirements are complex.
+
+When to Use Coding:
+- Advanced business logic is required
+- External system integration is needed
+- Configuration cannot solve the problem
+
+Examples:
+- Payment gateway integration
+- Complex approval process
+- Advanced calculations
+- Custom automation
+
+Advantages:
+- Highly flexible
+- Supports advanced functionality
+- Allows deep customization
+
+--------------------------------------------------
+
+# Core Task 1: Connect CRM Concepts with Salesforce Platform
+
+CRM concepts fit into Salesforce using Objects and Apps.
+
+| CRM Concept | Salesforce Representation |
+|-------------|--------------------------|
+| Account     | Object                   |
+| Contact     | Object                   |
+| Opportunity | Object                   |
+
+These objects work together inside Salesforce Apps.
+
+Business Flow:
+
+Lead → Contact → Opportunity → Customer
+
+Explanation:
+
+1. Lead
+A Lead is a person who shows interest in a product or service but is not yet confirmed as a customer.
+
+Examples:
+- Website inquiry
+- Registration form submission
+
+--------------------------------------------------
+
+2. Contact
+After verification, the Lead becomes a Contact.
+
+A Contact stores:
+- Name
+- Phone Number
+- Email
+- Customer Details
+
+--------------------------------------------------
+
+3. Opportunity
+An Opportunity represents a possible business deal.
+
+It helps companies track:
+- Deal amount
+- Sales stage
+- Revenue
+- Closing date
+
+--------------------------------------------------
+
+4. Customer
+When the deal is completed successfully, the person becomes a Customer.
+
+This process helps businesses manage sales efficiently.
+
+--------------------------------------------------
+
+# Core Task 2: Platform Understanding
+
+# What is an App?
+
+An App is a collection of related tools, tabs, and objects designed for a business process.
+
+Example:
 College Management App
 
+Contains:
+- Students
+- Faculty
+- Courses
+- Attendance
+
+--------------------------------------------------
+
+# What is an Object?
+
+An Object is a database table used to store data.
+
+Example:
+Student Object stores:
+- Student Name
+- Roll Number
+- Department
+
+--------------------------------------------------
+
+# What is a Tab?
+
+A Tab helps users access objects and records easily.
+
+Example:
+Students Tab opens all student records.
+
+--------------------------------------------------
+
+# Core Task 3: Configuration vs Coding
+
+# Configuration Examples
+
+Example 1:
+Validation Rule:
+Prevent users from saving records without Email.
+
+Example 2:
+Workflow Automation:
+Automatically send email after record creation.
+
+--------------------------------------------------
+
+# Coding Examples
+
+Example 1:
+Integrating Salesforce with Payment Gateway.
+
+Example 2:
+Creating complex calculations using Apex Trigger.
+
+--------------------------------------------------
+
+# Core Task 4: Real-Life System Design
+
+# Example: College Management System
+
+App Name:
+College Management App
+
+--------------------------------------------------
+
 Objects Inside the App
+
 Standard Objects:
-Contact
-Account
+- Contact
+- Account
+
 Custom Objects:
-Student
-Faculty
-Course
-Attendance
-Examination
-User Interaction
+- Student
+- Faculty
+- Course
+- Attendance
+- Examination
+
+--------------------------------------------------
+
+# User Interaction
+
 Students Can:
-View attendance
-Check marks
-View courses
+- View attendance
+- Check results
+- Access courses
+
 Faculty Can:
-Update attendance
-Add marks
-Manage courses
+- Update attendance
+- Add marks
+- Manage subjects
+
 Admin Can:
-Manage records
-Generate reports
-Assign faculty
+- Manage records
+- Generate reports
+- Assign faculty
+
+--------------------------------------------------
+
+# GitHub Submission
+
+Create Folder:
+
+/day2-platform-basics/
+
+Inside the folder create:
+
+README.md
+
+--------------------------------------------------
+
+# README.md Must Include
+
+1. What is Salesforce Platform?
+
+Explain:
+- Salesforce overview
+- Cloud platform
+- CRM capabilities
+- Automation and customization
+
+--------------------------------------------------
+
+2. Explain
+
+App:
+Collection of related tools and objects.
+
+Object:
+Database table used to store information.
+
+Tab:
+Navigation tool used to access records.
+
+--------------------------------------------------
+
+3. Difference Between Configuration vs Coding
+
+| Configuration       | Coding                    |
+|---------------------|---------------------------|
+| Uses clicks         | Uses programming          |
+| Simple customization| Advanced customization    |
+| Faster              | More flexible             |
+| No coding required  | Requires development knowledge |
+
+--------------------------------------------------
+
+4. Your System Design
+
+App Name:
+College Management App
+
+Objects:
+- Student
+- Faculty
+- Attendance
+- Course
+- Examination
+
+User Interaction:
+Students, faculty, and admins interact with records using tabs and apps.
+
+--------------------------------------------------
+
+5. Screenshots from Trailhead
+
+Add screenshots of:
+- Completed modules
+- Badges
+- Salesforce dashboard
+- Apps and objects
+
+--------------------------------------------------
+
+# Evaluation Questions
+
+1. What is an App in Salesforce?
+An App is a collection of related tools, tabs, and objects used for a business purpose.
+
+--------------------------------------------------
+
+2. What is an Object?
+An Object is a database table used to store records and data.
+
+--------------------------------------------------
+
+3. Difference Between App and Object
+An App organizes functionality, while an Object stores data.
+
+--------------------------------------------------
+
+4. What is Multi-Tenant Architecture?
+It is an architecture where multiple companies share the same infrastructure securely.
+
+--------------------------------------------------
+
+5. When Should We Use Configuration Instead of Code?
+Use configuration when requirements are simple and can be handled using built-in Salesforce tools.
+
+--------------------------------------------------
+
+6. How Does Salesforce Allow Developers to Extend Functionality?
+Using:
+- Apex
+- APIs
+- Lightning Components
+- Triggers
+- Integrations
