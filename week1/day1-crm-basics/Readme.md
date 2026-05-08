@@ -97,7 +97,6 @@ When the deal is completed successfully and the customer purchases the product o
 
 # Core Task 2: Real-Life Mapping (College Admission Example)
 
-Core Task 2: Real-Life Mapping (College Admission Example)
 Account = College
 Contact = Student
 Lead = Student inquiry about admission
