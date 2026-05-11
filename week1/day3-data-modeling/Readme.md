@@ -250,3 +250,93 @@ Stores department information.
 ### Formula:
 ```text
 First Name + " " + Last Name
+```
+
+### Explanation:
+This field automatically combines the student's first name and last name into a single field.  
+It saves time and avoids manual typing mistakes.
+
+---
+
+## 2. Remaining Seats
+
+### Formula:
+```text
+Total Seats - Enrolled Students
+```
+
+### Explanation:
+This field automatically calculates how many seats are available in a course.  
+It updates whenever a new student enrolls and prevents incorrect seat counts.
+
+---
+
+## 3. Percentage
+
+### Formula:
+```text
+(Obtained Marks / Total Marks) * 100
+```
+
+### Explanation:
+This field automatically calculates the student’s percentage based on marks entered.  
+It reduces manual calculation errors and ensures accuracy.
+
+---
+
+# 5. Validation Rules
+
+## 1. Email Cannot Be Empty
+
+### Rule:
+The Email field should not be blank.
+
+### Prevents:
+- Missing communication details
+- Incomplete student records
+
+---
+
+## 2. Student Age Cannot Be Negative
+
+### Rule:
+Age must be greater than 0.
+
+### Prevents:
+- Invalid student information
+- Incorrect database records
+
+---
+
+## 3. Enrolled Students Cannot Exceed Total Seats
+
+### Rule:
+Enrolled Students <= Total Seats
+
+### Prevents:
+- Overbooking courses
+- Incorrect seat management
+
+---
+
+# 6. Reflection – Why Structured Enterprise Data Matters
+
+Structured enterprise data is important because it keeps information organized, accurate, and easy to manage. Companies handle large amounts of data every day, and random spreadsheets can create duplicate records, missing information, and confusion.
+
+Structured data helps companies:
+- Store data in a proper format
+- Improve teamwork between departments
+- Generate reports quickly
+- Reduce errors
+- Maintain consistency
+- Make better business decisions
+
+For example, in a college management system, structured data helps manage students, faculty, departments, and courses efficiently without confusion or data loss.
+
+# 4. Formula Fields
+
+## 1. Full Name
+
+### Formula:
+```text
+First Name + " " + Last Name
