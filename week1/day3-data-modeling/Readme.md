@@ -1,156 +1,13 @@
-# Day 3 – Data Modeling (College Management System)
-
-# CORE TASKS
+# Salesforce Summer Program – Day 3
 
 ---
 
-# 1️⃣ Design a College Management System
+# Key Concepts Learned
 
-## Objects
+## 1. Objects
+Objects are database tables used to store data in Salesforce.
 
-### Student
-Stores student-related information.
-
-Fields:
-- Student ID
-- First Name
-- Last Name
-- Email
-- Age
-- Department
-- Course
-
----
-
-### Faculty
-Stores faculty/teacher details.
-
-Fields:
-- Faculty ID
-- Faculty Name
-- Email
-- Department
-
----
-
-### Course
-Stores course information.
-
-Fields:
-- Course Name
-- Course Code
-- Total Seats
-- Enrolled Students
-- Faculty
-- Department
-
----
-
-### Department
-Stores department details.
-
-Fields:
-- Department Name
-- HOD Name
-- Total Students
-
----
-
-# Relationships
-
-## 1. Department → Student
-- One department can have many students
-- Relationship Type: One-to-Many
-- Suggested Relationship: Lookup
-
-Reason:
-Each student belongs to one department, while a department contains multiple students.
-
----
-
-## 2. Department → Faculty
-- One department can have many faculty members
-- Relationship Type: One-to-Many
-- Suggested Relationship: Lookup
-
-Reason:
-Faculty members work under a single department.
-
----
-
-## 3. Department → Course
-- One department can offer many courses
-- Relationship Type: One-to-Many
-- Suggested Relationship: Lookup
-
-Reason:
-Courses are managed under departments.
-
----
-
-## 4. Faculty → Course
-- One faculty member can teach many courses
-- Relationship Type: One-to-Many
-- Suggested Relationship: Lookup
-
-Reason:
-A faculty member may handle multiple courses.
-
----
-
-## 5. Course → Student
-- One course can contain many students
-- Relationship Type: One-to-Many
-- Suggested Relationship: Lookup
-
-Reason:
-Many students can enroll in the same course.
-
----
-
-# Data Model Diagram
-
-```text id="2yngrf"
-Department
-   |
-   |----< Student
-   |
-   |----< Faculty
-   |
-   |----< Course
-                 |
-                 |----< Students
-                 |
-                 |---- Faculty
-
-
-
-
-## 1. Difference Between App, Object, Record, and Field
-
-| Term | Meaning | Example |
-|------|----------|----------|
-| App | A collection of related features and objects used for a business purpose | College Management App |
-| Object | A database table that stores similar types of data | Student Object |
-| Record | A single entry inside an object | One student’s details |
-| Field | A specific piece of information in a record | Student Name, Email |
-
----
-
-# 2. Standard vs Custom Objects
-
-## Standard Objects
-These are objects already provided by platforms like Salesforce.
-
-Examples:
-- Account
-- Contact
-- Opportunity
-
-## Custom Objects
-These are user-created objects designed for specific business needs.
-
-Examples in this project:
+### Examples:
 - Student
 - Faculty
 - Course
@@ -158,131 +15,238 @@ Examples in this project:
 
 ---
 
-# 3. College Data Model
+## 2. Fields
+Fields are individual pieces of information stored inside an object.
+
+### Examples:
+- Name
+- Email
+- Age
+- Course Name
+
+---
+
+## 3. Records
+A record is a single entry inside an object.
+
+### Example:
+A single student’s details inside the Student object.
+
+---
+
+# Standard vs Custom Objects
+
+## Standard Objects
+These are pre-built objects provided by Salesforce.
+
+### Examples:
+- Account
+- Contact
+- Opportunity
+
+---
+
+## Custom Objects
+These are objects created by users based on business requirements.
+
+### Examples:
+- Student
+- Faculty
+- Course
+
+---
+
+# Relationship Types in Salesforce
+
+## One-to-Many Relationship
+One record can be connected to many records.
+
+### Example:
+- One Department can have many Students.
+- One Course can have many Students.
+
+---
+
+## Lookup Relationship
+A relationship used to connect two objects.
+
+### Example:
+- Student → Course
+- Faculty → Department
+
+---
+
+# Why Enterprise Systems Need Structured Data
+
+Structured data helps organizations:
+- Store information properly
+- Reduce duplicate records
+- Improve reporting
+- Maintain data accuracy
+- Increase productivity
+- Improve decision-making
+
+Without structured data, random spreadsheets can create confusion, errors, and missing information.
+
+---
+
+# Formula Fields
+
+Formula fields automatically calculate values using formulas.
+
+### Examples:
+- Full Name
+- Percentage
+- Remaining Seats
+
+### Benefits:
+- Saves time
+- Reduces manual errors
+- Automatically updates values
+
+---
+
+# Validation Rules
+
+Validation rules ensure only correct data is entered into the system.
+
+### Examples:
+- Email cannot be blank
+- Age cannot be negative
+- Course seats cannot exceed limit
+
+### Benefits:
+- Prevents bad data
+- Maintains data quality
+- Improves system reliability
+
+
+
+Data Modeling (College Management System)
+
+## 1. Difference Between App, Object, Record, and Field
+
+| Term | Meaning | Example |
+|------|----------|----------|
+| App | A collection of related tools/features used for a business process | College Management App |
+| Object | A table that stores similar types of data | Student Object |
+| Record | One single row/data entry inside an object | Student: Ravi Kumar |
+| Field | A column that stores one piece of information | Student Name, Email |
+
+---
+
+# 2. Standard vs Custom Objects
+
+## Standard Objects
+These are pre-built objects provided by the platform.
+
+### Examples:
+- Account
+- Contact
+- Opportunity
+
+### Features:
+- Already available
+- Common business usage
+- Less customization needed
+
+---
+
+## Custom Objects
+These are objects created by users based on business requirements.
+
+### Examples in College System:
+- Student
+- Faculty
+- Course
+- Department
+
+### Features:
+- Fully customizable
+- Designed for specific business needs
+- Helps organize custom data
+
+---
+
+# 3. College Management System Data Model
 
 ## Objects
 
 ### Student
-Stores student information.
+Stores student details.
 
-Fields:
+#### Fields:
 - Student ID
 - First Name
 - Last Name
 - Email
 - Age
-- Department
 - Course
+- Department
+- Percentage
 
 ---
 
 ### Faculty
-Stores faculty/teacher details.
+Stores faculty information.
 
-Fields:
+#### Fields:
 - Faculty ID
-- Name
+- Faculty Name
 - Email
 - Department
+- Subject
 
 ---
 
 ### Course
 Stores course details.
 
-Fields:
+#### Fields:
+- Course ID
 - Course Name
-- Course Code
 - Total Seats
 - Enrolled Students
-- Faculty
-- Department
+- Remaining Seats
 
 ---
 
 ### Department
 Stores department information.
 
-Fields:
+#### Fields:
+- Department ID
 - Department Name
 - HOD Name
-- Total Students
 
 ---
 
 # Relationships
 
-## 1. Department → Student
-One Department can have many Students.
-
-Relationship Type:
-- One-to-Many
-- Lookup Relationship
-
-Reason:
-A student belongs to one department, but a department can contain many students.
+| Relationship | Type | Explanation |
+|--------------|------|-------------|
+| Department → Students | One-to-Many | One department can have many students |
+| Department → Faculty | One-to-Many | One department can have many faculty members |
+| Course → Students | One-to-Many | One course can have many students |
+| Department → Courses | One-to-Many | One department can offer many courses |
 
 ---
 
-## 2. Department → Faculty
-One Department can have many Faculty members.
+# Lookup Relationships
 
-Relationship Type:
-- One-to-Many
-- Lookup Relationship
-
-Reason:
-Faculty members work under one department.
-
----
-
-## 3. Department → Course
-One Department can offer many Courses.
-
-Relationship Type:
-- One-to-Many
-- Lookup Relationship
-
-Reason:
-Each course belongs to a department.
+| Object | Lookup To | Reason |
+|--------|------------|--------|
+| Student | Course | Student belongs to one course |
+| Student | Department | Student belongs to one department |
+| Faculty | Department | Faculty works in one department |
+| Course | Department | Course belongs to one department |
 
 ---
 
-## 4. Faculty → Course
-One Faculty member can teach many Courses.
+# 4. Formula Fields
 
-Relationship Type:
-- One-to-Many
-- Lookup Relationship
+## 1. Full Name
 
-Reason:
-A faculty member may handle multiple courses.
-
----
-
-## 5. Course → Student
-One Course can contain many Students.
-
-Relationship Type:
-- One-to-Many
-- Lookup Relationship
-
-Reason:
-Many students enroll in a course.
-
----
-
-# Data Model Diagram
-
+### Formula:
 ```text
-Department
-   |
-   |----< Student
-   |
-   |----< Faculty
-   |
-   |----< Course
-                 |
-                 |----< Students
-                 |
-                 |---- Faculty
+First Name + " " + Last Name
