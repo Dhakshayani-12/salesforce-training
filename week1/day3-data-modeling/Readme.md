@@ -333,10 +333,3 @@ Structured data helps companies:
 
 For example, in a college management system, structured data helps manage students, faculty, departments, and courses efficiently without confusion or data loss.
 
-# 4. Formula Fields
-
-## 1. Full Name
-
-### Formula:
-```text
-First Name + " " + Last Name
