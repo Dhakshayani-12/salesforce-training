@@ -1,4 +1,4 @@
-# /day4-flow-builder/
+# Day4-Flow-Builder
 
 # README.md
 
@@ -79,3 +79,43 @@ Send Reminder Email
 Update Status
   ↓
 End
+
+
+# 5. Manual vs Automated Process
+
+| Manual Process | Automated Process |
+|----------------|------------------|
+| Requires human effort for every task | Tasks run automatically |
+| Time consuming | Saves time |
+| Higher chance of human errors | More accurate and consistent |
+| Repetitive and tiring | Reduces repetitive work |
+| Slow response time | Faster processing |
+| Difficult to scale | Easily scalable |
+| Requires continuous monitoring | Minimal monitoring needed |
+| Lower productivity | Higher productivity |
+
+## Example
+
+### Manual Process
+A sales employee manually checks every new lead and assigns it to a team member.
+
+### Automated Process
+A Salesforce Flow automatically assigns leads based on region or department rules.
+
+---
+
+# 6. Reflection: Why Automation Matters in Enterprise Systems
+
+Automation plays a major role in modern enterprise systems because businesses manage large amounts of data and repetitive processes every day. Manual handling of these tasks can lead to delays, errors, and reduced productivity.
+
+Using automation tools like Salesforce Flow Builder helps organizations:
+- Save time
+- Reduce human errors
+- Improve productivity
+- Increase operational efficiency
+- Deliver faster customer service
+- Maintain process consistency
+
+Automation also allows employees to focus on strategic and creative tasks instead of repetitive work. In enterprise environments, automation improves scalability, reliability, and overall business performance.
+
+As organizations grow, automation becomes essential for managing workflows efficiently and ensuring smooth business operations.
