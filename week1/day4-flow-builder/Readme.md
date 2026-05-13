@@ -62,25 +62,6 @@ Send reminder emails before invoice due dates.
 Notify parents automatically when student attendance is low.
 
 ---
-
-# 4. Your Flow Diagram
-
-## Example Flow Diagram
-
-```text
-Start
-  ↓
-Get Customer Record
-  ↓
-Check Payment Due Date
-  ↓
-Send Reminder Email
-  ↓
-Update Status
-  ↓
-End
-
-
 # 5. Manual vs Automated Process
 
 | Manual Process | Automated Process |
@@ -114,6 +95,24 @@ Using automation tools like Salesforce Flow Builder helps organizations:
 - Improve productivity
 - Increase operational efficiency
 - Deliver faster customer service
+
+# 4. Your Flow Diagram
+
+## Example Flow Diagram
+
+```text
+Start
+  ↓
+Get Customer Record
+  ↓
+Check Payment Due Date
+  ↓
+Send Reminder Email
+  ↓
+Update Status
+  ↓
+End
+
 - Maintain process consistency
 
 Automation also allows employees to focus on strategic and creative tasks instead of repetitive work. In enterprise environments, automation improves scalability, reliability, and overall business performance.
