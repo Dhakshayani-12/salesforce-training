@@ -256,9 +256,3 @@ Enterprise software development requires structured workflows to ensure reliabil
 Testing, Asynchronous Apex, and Salesforce DX are essential technologies in Salesforce development. Together, they help organizations build scalable, reliable, and maintainable enterprise applications while supporting modern development and deployment practices.
 
 ---
-
-## Author
-
-**Name:** Your Name  
-**Course:** Salesforce Development  
-**Topic:** Testing, Asynchronous Apex and Salesforce DX
